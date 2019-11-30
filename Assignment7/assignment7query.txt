@@ -1,0 +1,36 @@
+Maven Assignment
+Assuming, you have GIT, tomcat, maven setup in your development environment; 
+do the following:
+
+1.At command prompt, what will be command to generate archetypes?
+
+mvn archetype:generate
+
+
+2.At command prompt, what will be command to create a new maven project with archetype whose description is following:
+
+mvn archetype:generate -DgroupId=giri.assignment7 -DartifactId=my-assignment -DarchetypeArtifactId=maven-giri-assignment7 -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+
+3.Once the project is created with the required template:
+a.What will be the command to compile the project? 
+
+--> mvn compile
+--> mvn  build
+--> mvn package
+--> mvn exec:java
+--> mvn clean
+
+
+c.What will be command to execute the jar which is created by above command?
+java -cp target/my-assignment-1.0-SNAPSHOT.jar giri.assignment7.App
+
+
+
+
+e.Change POM.xml to create war executable in place of jar executable in the above project. 
+Run the command to create .war executable.
+
+1) Convert Java Project into Maven project in Eclipse
+2) Add maven-war-plugin to pom.xml file
+3) Run command clean install to generate .war file
